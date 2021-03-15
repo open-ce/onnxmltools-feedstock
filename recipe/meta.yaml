@@ -21,11 +21,10 @@ requirements:
     - python >=3.6
   run:
     - python >=3.6
-    - six
     - keras2onnx
     - numpy
     - onnx
-    - onnxconverter-common >=1.7,<1.8
+    - onnxconverter-common >=1.8,<1.9
     - protobuf
     - skl2onnx
 
