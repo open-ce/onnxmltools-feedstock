@@ -11,21 +11,21 @@ source:
   sha256: 3f460b79d22a7fb1c9098ccacfe5da9da1558db4e96346bc847fde73c6cad6c0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python
   run:
-    - python >=3.6
+    - python
     - keras2onnx
-    - numpy
-    - onnx
+    - numpy {{ numpy }}
+    - onnx {{ onnx }}
     - onnxconverter-common >=1.8,<1.9
-    - protobuf
+    - protobuf {{ protobuf }}
     - skl2onnx
 
 test:
