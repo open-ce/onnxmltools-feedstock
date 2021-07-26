@@ -24,7 +24,7 @@ requirements:
     - keras2onnx
     - numpy {{ numpy }}
     - onnx {{ onnx }}
-    - onnxconverter-common >=1.8,<1.9
+    - onnxconverter-common {{ onnxconverter_common }}
     - protobuf {{ protobuf }}
     - skl2onnx
 

@@ -1,7 +1,0 @@
-recipes:
-  - name : onnxmltools
-    path : recipe
-
-channels:
-  - defaults
-  - conda-forge
