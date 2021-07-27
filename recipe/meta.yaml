@@ -11,30 +11,27 @@ source:
   sha256: 3f460b79d22a7fb1c9098ccacfe5da9da1558db4e96346bc847fde73c6cad6c0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  string: py_pb{{ protobuf | replace(".*", "")}}_{{ PKG_BUILDNUM }}
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python
   run:
-    - python >=3.6
+    - python
     - keras2onnx
-    - numpy
-    - onnx
-    - onnxconverter-common >=1.8,<1.9
-    - protobuf
+    - numpy {{ numpy }}
+    - onnx {{ onnx }}
+    - onnxconverter-common {{ onnxconverter_common }}
+    - protobuf {{ protobuf }}
     - skl2onnx
 
 test:
   imports:
     - onnxmltools
-  commands:
-    - pip check
-  requires:
-    - pip
 
 about:
   home: https://github.com/onnx/onnxmltools
@@ -44,4 +41,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - xhochy
+    - open-ce/open-ce-dev-team
