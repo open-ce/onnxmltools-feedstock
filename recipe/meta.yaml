@@ -22,7 +22,6 @@ requirements:
     - python
   run:
     - python
-    - keras2onnx
     - numpy {{ numpy }}
     - onnx {{ onnx }}
     - onnxconverter-common {{ onnxconverter_common }}
