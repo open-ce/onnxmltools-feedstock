@@ -1,5 +1,5 @@
 {% set name = "onnxmltools" %}
-{% set version = "1.8.0" %}
+{% set version = "1.9.1" %}
 
 
 package:
@@ -24,8 +24,6 @@ requirements:
     - python
     - numpy {{ numpy }}
     - onnx {{ onnx }}
-    - onnxconverter-common {{ onnxconverter_common }}
-    - protobuf {{ protobuf }}
     - skl2onnx
 
 test:
