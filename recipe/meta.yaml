@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/onnx/onnxmltools/archive/{{ version }}.tar.gz
-  sha256: 3f460b79d22a7fb1c9098ccacfe5da9da1558db4e96346bc847fde73c6cad6c0
+  sha256: 4900514a017bbe87577c4caaefc0b5ad58d2ee96cd2f2b4233c96ac424135521
 
 build:
   number: 1
