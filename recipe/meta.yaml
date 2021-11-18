@@ -11,7 +11,7 @@ source:
   sha256: 375a854cf4755352b9194e1e519e2cbdf2a89132b7ab8c13da566f40063bc589
 
 build:
-  number: 2
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   string: pyh{{ PKG_HASH }}_pb{{ protobuf | replace(".*", "")}}_{{ PKG_BUILDNUM }}
