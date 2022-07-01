@@ -1,5 +1,5 @@
 {% set name = "onnxmltools" %}
-{% set version = "1.11.0" %}
+{% set version = "1.11.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/onnx/onnxmltools/archive/{{ version }}.tar.gz
-  sha256: 6c703a3dd78c4bb4bfaf4b2ca75602a53d455b11215a0656b166405d75066b8d
+  sha256: a739dc2147a2609eff2b2aad4a423b9795a49557c6b4c55b15c9ee323b4a01b7 
 
 build:
   number: 1
@@ -25,6 +25,7 @@ requirements:
     - numpy {{ numpy }}
     - onnx {{ onnx }}
     - skl2onnx
+    - onnxruntime
 
 test:
   imports:
